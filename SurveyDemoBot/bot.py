@@ -32,16 +32,18 @@ def answer_the_question(message):
         test_question = questionnaire[0]
         f = open(config.path + 'Answers.txt', 'w')
         f.close()
+    elif message.text[0] not in ['1','2','3','4','5']:
+        test_question = "Выбирете один из доступных ответов"
     elif file_length == 0:
         f = open(config.path + 'Answers.txt', 'a')
-        f.write(str(file_length) + ' - ' + message.text)
+        f.write(str(file_length) + ' - ' + message.text[0])
         test_question = questionnaire[file_length + 1]
     elif file_length == len(questionnaire):
         test_question = "Опрос завершен. Спасибо за участие!"
     else:
         f = open(config.path + 'Answers.txt', 'a')
         f.write('\n')
-        f.write(str(file_length) + ' - ' + message.text)
+        f.write(str(file_length) + ' - ' + message.text[0])
         if file_length + 1 == len(questionnaire):
             test_question = "Опрос завершен. Спасибо за участие!"
         else:
