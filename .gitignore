@@ -1,6 +1,6 @@
 .Python
 bin
-EchoBot/__pycache__
+SurveyDemoBot/__pycache__
 include
 lib
 pip-selfcheck.json
