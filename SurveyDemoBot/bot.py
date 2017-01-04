@@ -6,9 +6,11 @@ from telebot import types
 
 # создаем клавиатуру с оценками по шкале Лайкерта
 markup = types.ReplyKeyboardMarkup()
-markup.row('1 - Полностью не согласен','2 - Не согласен')
+markup.row('1 - Полностью не согласен')
+markup.row('2 - Не согласен')
 markup.row('3 - Затрудняюсь ответить')
-markup.row('4 - Согласен','5 - Полностью согласен')
+markup.row('4 - Согласен')
+markup.row('5 - Полностью согласен')
 
 
 # создаем бота
