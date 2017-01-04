@@ -1,6 +1,7 @@
 .Python
 bin
 SurveyDemoBot/__pycache__
+SurveyDemoBot/.idea
 include
 lib
 pip-selfcheck.json
