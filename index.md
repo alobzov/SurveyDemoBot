@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Бот для иллюстрации проведения опросов через Telegram
+title: Бот для проведения опросов через Telegram
 description: Это описание моего Pet-проекта по проведению опросов через Telegram
 keywords:
   - алексей лобзов
