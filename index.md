@@ -1,13 +1,10 @@
 ---
 layout: default
+date: 2023-10-02
 title: Бот для проведения опросов через Telegram
 description: Это описание моего Pet-проекта по проведению опросов через Telegram
-keywords:
-  - алексей лобзов
-  - проведение опросов
-  - telegram
-  - telegram-бот
-  - alobzov
+author: Алексей Лобзов
+keywords: алексей лобзов, опрос, проведение опросов, telegram, telegram-бот
 ---
 
 # {{ page.title }}
