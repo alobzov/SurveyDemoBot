@@ -9,6 +9,28 @@ keywords: алексей лобзов, опрос, проведение опро
 
 # {{ page.title }}
 
+<div class="subline">
+  <time datetime="{{ page.date | date-to_xmlschema }}">
+    {% assign m = page.date | date: "%-m" %}
+    {{ page.date | date: "%-d" }}
+    {% case m %}
+      {% when '1' %}января
+      {% when '2' %}февраля
+      {% when '3' %}марта
+      {% when '4' %}апреля
+      {% when '5' %}мая
+      {% when '6' %}июня
+      {% when '7' %}июля
+      {% when '8' %}августа
+      {% when '9' %}сентября
+      {% when '10' %}октября
+      {% when '11' %}ноября
+      {% when '12' %}декабря
+    {% endcase %}
+    {{ page.date | date: "%Y" }}
+  </time>
+</div>
+
 [Бот](https://github.com/alobzov/SurveyDemoBot) предназначен для иллюстрации проведения опросов через Telegram.
 
 Бот загружает вопросы (с ответами по [шкале Лайкерта](https://ru.wikipedia.org/wiki/Шкала_Ликерта)) из файла ``Affirmations.txt`` и направляет их пользователю. Ответы пользователя записываются в файл ``XXXXXXXXX_Answers.txt``. Опрос запускается каждый раз, когда пользователь вводит команду ``/start`` либо получены ответы на все вопросы.
